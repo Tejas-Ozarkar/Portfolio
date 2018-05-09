@@ -50,6 +50,10 @@
   margin: 0;
   padding: 0; }
 
+html,
+body {
+  overflow: hidden; }
+
 body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif; }
@@ -160,11 +164,11 @@ body {
   .projects .carousel-control-next-icon:after {
     content: '>';
     font-size: 55px;
-    color: #9200ff; }
+    color: #333; }
   .projects .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    color: #9200ff; }
+    color: #333; }
 
 .achievements {
   text-align: center;

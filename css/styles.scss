@@ -139,7 +139,6 @@
     
     .projects {
         margin-top: 50px;
-        @extend %flex-box;
         // padding: 100px 200px;
         .project-card {
             // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -147,17 +146,19 @@
             padding: 0;
             padding: 10px;
             .project-img {
-                height: 400px;
+                // height: 400px;
                 width: 100%;
                 overflow: hidden;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             .carousel {
                 height: 100%;
+                width: 100%;
                 overflow: hidden;
                 @extend %flex-box;
                 img {
                     height: 100%;
+                    width: 100%;
                 }
             }
             .project-detail {

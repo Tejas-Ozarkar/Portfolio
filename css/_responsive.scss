@@ -1,0 +1,158 @@
+@media (min-width: 767.99px) {
+    .logo {
+        text-align: start;
+    }
+    .headline {
+        h1 {
+            font-size: 3vw;
+        }
+        h3 {
+            font-size: 2vw;
+        }
+        img {
+            height: 350px;
+        }
+    }
+    #hero {
+        width: 60%;
+    }
+    .introduction {
+        padding: 160px 200px 300px 200px;
+    }
+    #skill1,
+    #skill2 {
+        border-right: 0.5px solid rgba(68, 68, 68, 0.507);
+    }
+    .projects {
+        padding: 100px 10%;
+    }
+    .project-card {
+        margin-top: 80px;
+    }
+    .achievements {
+        padding: 100px 10%;
+    }
+    .robotics-projects {
+        padding: 50px 8%;
+    }
+    .footer {
+        .contact {
+            .left-contact {
+                padding-right: 250px
+            }
+            .right-contact {
+                padding-left: 250px;
+                text-align: end
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .logo {
+        #logo {
+            margin: 30px;
+            height: 100px;
+        }
+    }
+    .headline {
+        h1 {
+            font-size: 8vw;
+        }
+        h3 {
+            font-size: 4vw;
+        }
+        img {
+            height: 300px;
+        }
+    }
+    #hero {
+        width: 100%;
+    }
+    .introduction {
+        padding: 100px 50px 200px 30px;
+        text-align: center;
+    }
+    #skill1,
+    #skill2 {
+        border-bottom: 0.5px solid rgba(68, 68, 68, 0.507);
+    }
+    .projects {
+        padding: 100px 10%;
+        padding-bottom: 0 !important;
+        h3 {
+            margin-bottom: 30px;
+        }
+        .project-detail {
+            border-bottom: 0.5px solid rgba(68, 68, 68, 0.507);
+        }
+    }
+    .achievements {
+        padding: 100px 10%;
+    }
+    .robotics-projects {
+        padding: 50px 8%;
+    }
+    .robotics-card {
+        background-position: 0px 0px!important;
+    }
+    .footer {
+        height: 800px;
+        .contact {
+            width: 90%;
+            h5 {
+                font-size: 20px;
+            }
+            .left-contact {
+                margin-bottom: 40px;
+            }
+            .right-contact {
+                margin-top: 180px;
+            }
+        }
+        .logo {
+            height: 200px;
+            width: 200px;
+            img {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .headline {
+        h1 {
+            font-size: 8vw;
+        }
+        h3 {
+            font-size: 6vw;
+        }
+    }
+    .introduction {
+        h3 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }
+    .projects {
+        padding: 100px 5%;
+    }
+    .achievements {
+        padding: 100px 5%;
+    }
+    .robotics-projects {
+        padding: 50px 2%;
+    }
+    .robotics-card {
+        background-position: 0px 0px !important;
+    }
+    .card4 {
+        background-position: -80px 0px !important;
+    }
+    .card5 {
+        background-position: -80px 0px!important;
+    }
+}

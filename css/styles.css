@@ -13,6 +13,13 @@
       -ms-flex-pack: center;
           justify-content: center; }
 
+#load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background: url("../img/load.gif") no-repeat center center white; }
+
 * {
   margin: 0;
   padding: 0; }

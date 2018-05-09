@@ -193,6 +193,14 @@
     }
     
     .achievements {
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+        .col-md-6 {
+            margin: 0;
+            padding: 0;
+        }
         text-align: center;
         width: 100vw;
         // background: $primaryColor;
@@ -202,8 +210,9 @@
             margin-bottom: 50px;
         }
         .achievement-card {
-            width: 100%;
+            width: 95%;
             height: 200px;
+            overflow: hidden;
             // background: #333;
             // background: rgb(97, 97, 97);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

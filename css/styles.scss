@@ -1,0 +1,242 @@
+// $primaryColor: #9917fc;
+$primaryColor: #9200ff;
+%flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    background: white;
+    text-align: center;
+}
+
+.logo {
+    text-align: start;
+}
+
+#logo {
+    height: 60px;
+    margin: 20px 120px;
+}
+
+.headline {
+    width: 100%;
+    height: 80%;
+    color: rgb(66, 65, 65);
+    z-index: 2;
+    @extend %flex-box;
+    img {
+        margin-top: 30px;
+        height: 350px;
+        width: auto;
+        z-index: 2;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+}
+
+#hero {
+    margin-top: 0px;
+    width: 60%;
+    height: auto;
+}
+
+.introduction {
+    margin-top: -5px;
+    width: 100vw;
+    @extend %flex-box;
+    padding: 160px 200px 300px 200px;
+    background: $primaryColor;
+    color: white;
+    text-align: center;
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 22px;
+    }
+}
+
+.skills-main {
+    margin-top: -150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .skills {
+        width: 80%;
+        background: white;
+        border-radius: 20px;
+        border: 0.3px solid $primaryColor;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        // height: 500px;
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        h3 {
+            color: $primaryColor;
+        }
+        i {
+            color: $primaryColor;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        #skill1,
+        #skill2 {
+            border-right: 0.5px solid rgba(68, 68, 68, 0.507);
+        }
+    }
+}
+
+.projects {
+    margin-top: 50px;
+    @extend %flex-box;
+    padding: 100px 200px;
+    .project-card {
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        overflow: hidden;
+        padding: 0;
+        margin-top: 80px;
+        padding: 10px;
+        .project-img {
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .carousel {
+            height: 100%;
+            overflow: hidden;
+            @extend %flex-box;
+            img {
+                height: 100%;
+            }
+        }
+        .project-detail {
+            padding: 50px;
+            height: 400px;
+            @extend %flex-box;
+            text-align: center;
+            .btn {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.achievements {
+    text-align: center;
+    width: 100vw;
+    // background: $primaryColor;
+    color: rgb(44, 44, 44);
+    padding: 100px 200px;
+    h3 {
+        margin-bottom: 50px;
+    }
+    .achievement-card {
+        width: 100%;
+        height: 200px;
+        // background: #333;
+        // background: rgb(97, 97, 97);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 10px;
+        .ach-img {
+            width: 40%;
+            height: 100%;
+            float: left;
+            background: rgb(68, 68, 68);
+            @extend %flex-box;
+            color: white;
+            h2 {
+                font-size: 40px;
+                margin-top: 10px;
+            }
+            i {
+                color: white;
+                font-size: 60px;
+            }
+            img {
+                height: 100px;
+            }
+        }
+        .ach-detail {
+            width: 60%;
+            height: 100%;
+            background: rgb(255, 255, 255);
+            float: left;
+            color: #333;
+            padding: 30px;
+            @extend %flex-box;
+        }
+    }
+}
+
+.footer {
+    height: 600px;
+    background: white;
+    position: relative;
+    @extend %flex-box;
+    .contact {
+        width: 80%;
+        height: 60%;
+        background: $primaryColor;
+        // background: rgb(83, 83, 83);
+        // background: #cd9eef;
+        color: white;
+        // color: rgb(255, 255, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .col-md-6 {
+            @extend %flex-box;
+        }
+        i {
+            color: white;
+            font-size: 40px;
+            margin: 5px;
+        }
+    }
+    .logo {
+        position: absolute;
+        top: 50;
+        left: 50;
+        height: 400px;
+        width: 400px;
+        background: white;
+        border-radius: 200px;
+        @extend %flex-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        img {
+            margin-top: 20px;
+            width: 80%;
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: #333;
+}

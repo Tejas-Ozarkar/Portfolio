@@ -1,0 +1,179 @@
+.headline, .introduction, .projects, .projects .project-card .carousel, .projects .project-card .project-detail, .achievements .achievement-card .ach-img, .achievements .achievement-card .ach-detail, .footer, .footer .contact .col-md-6, .footer .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif; }
+
+.header {
+  width: 100vw;
+  background: white;
+  text-align: center; }
+
+.logo {
+  text-align: start; }
+
+#logo {
+  height: 60px;
+  margin: 20px 120px; }
+
+.headline {
+  width: 100%;
+  height: 80%;
+  color: #424141;
+  z-index: 2; }
+  .headline img {
+    margin-top: 30px;
+    height: 350px;
+    width: auto;
+    z-index: 2; }
+  .headline h1 {
+    font-size: 50px; }
+  .headline h3 {
+    margin-top: 30px;
+    font-size: 30px; }
+
+#hero {
+  margin-top: 0px;
+  width: 60%;
+  height: auto; }
+
+.introduction {
+  margin-top: -5px;
+  width: 100vw;
+  padding: 160px 200px 300px 200px;
+  background: #9200ff;
+  color: white;
+  text-align: center; }
+  .introduction h3 {
+    font-size: 30px;
+    font-weight: bold; }
+  .introduction h4 {
+    font-size: 22px; }
+
+.skills-main {
+  margin-top: -150px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .skills-main .skills {
+    width: 80%;
+    background: white;
+    border-radius: 20px;
+    border: 0.3px solid #9200ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .skills-main .skills .col-md-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      font-size: 20px;
+      text-align: center; }
+    .skills-main .skills h3 {
+      color: #9200ff; }
+    .skills-main .skills i {
+      color: #9200ff;
+      font-size: 60px;
+      margin-bottom: 20px; }
+    .skills-main .skills #skill1,
+    .skills-main .skills #skill2 {
+      border-right: 0.5px solid rgba(68, 68, 68, 0.507); }
+
+.projects {
+  margin-top: 50px;
+  padding: 100px 200px; }
+  .projects .project-card {
+    overflow: hidden;
+    padding: 0;
+    margin-top: 80px;
+    padding: 10px; }
+    .projects .project-card .project-img {
+      height: 400px;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .projects .project-card .carousel {
+      height: 100%;
+      overflow: hidden; }
+      .projects .project-card .carousel img {
+        height: 100%; }
+    .projects .project-card .project-detail {
+      padding: 50px;
+      height: 400px;
+      text-align: center; }
+      .projects .project-card .project-detail .btn {
+        margin-top: 10px; }
+
+.achievements {
+  text-align: center;
+  width: 100vw;
+  color: #2c2c2c;
+  padding: 100px 200px; }
+  .achievements h3 {
+    margin-bottom: 50px; }
+  .achievements .achievement-card {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px; }
+    .achievements .achievement-card .ach-img {
+      width: 40%;
+      height: 100%;
+      float: left;
+      background: #444444;
+      color: white; }
+      .achievements .achievement-card .ach-img h2 {
+        font-size: 40px;
+        margin-top: 10px; }
+      .achievements .achievement-card .ach-img i {
+        color: white;
+        font-size: 60px; }
+      .achievements .achievement-card .ach-img img {
+        height: 100px; }
+    .achievements .achievement-card .ach-detail {
+      width: 60%;
+      height: 100%;
+      background: white;
+      float: left;
+      color: #333;
+      padding: 30px; }
+
+.footer {
+  height: 600px;
+  background: white;
+  position: relative; }
+  .footer .contact {
+    width: 80%;
+    height: 60%;
+    background: #9200ff;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .footer .contact i {
+      color: white;
+      font-size: 40px;
+      margin: 5px; }
+  .footer .logo {
+    position: absolute;
+    top: 50;
+    left: 50;
+    height: 400px;
+    width: 400px;
+    background: white;
+    border-radius: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .footer .logo img {
+      margin-top: 20px;
+      width: 80%; }
+
+.copyright {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  color: #333; }

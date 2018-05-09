@@ -1,8 +1,17 @@
 .headline, .introduction, .projects, .projects .project-card .carousel, .projects .project-card .project-detail, .achievements .achievement-card .ach-img, .achievements .achievement-card .ach-detail, .footer, .footer .contact .col-md-6, .footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 * {
   margin: 0;
@@ -61,18 +70,30 @@ body {
 .skills-main {
   margin-top: -150px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .skills-main .skills {
     width: 80%;
     background: white;
     border-radius: 20px;
     border: 0.3px solid #9200ff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .skills-main .skills .col-md-4 {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       padding: 80px 20px;
       font-size: 20px;
       text-align: center; }
@@ -98,7 +119,8 @@ body {
       height: 400px;
       width: 100%;
       overflow: hidden;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .projects .project-card .carousel {
       height: 100%;
       overflow: hidden; }
@@ -121,7 +143,8 @@ body {
   .achievements .achievement-card {
     width: 100%;
     height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 10px; }
     .achievements .achievement-card .ach-img {
       width: 40%;
@@ -155,7 +178,9 @@ body {
     width: 100%;
     height: 350px;
     margin-top: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; }
   .robotics-projects .card1 {
     background: url("../img/RoboticsProjects/img1.jpg");
     background-size: cover; }
@@ -184,19 +209,63 @@ body {
     height: 100%;
     background: rgba(61, 61, 61, 0.178);
     position: relative; }
-  .robotics-projects .robot-name {
+  .robotics-projects .robot-content {
     position: absolute;
-    width: 100%;
-    height: 70px;
-    background: #9200ff;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
+    top: 80%;
     left: 0;
-    font-size: 20px; }
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(142, 85, 247, 0.644);
+    -webkit-transition: top 1s;
+    transition: top 1s; }
+    .robotics-projects .robot-content .robot-name {
+      background: #9200ff;
+      height: 20%;
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .robotics-projects .robot-content .robot-description {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px;
+      height: 80%;
+      color: white;
+      font-size: 16px; }
+      .robotics-projects .robot-content .robot-description a {
+        margin-top: 10px;
+        color: white;
+        text-decoration: none;
+        background: #333;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 16px; }
+  .robotics-projects .robotics-card:hover .robot-content {
+    top: 0; }
+    .robotics-projects .robotics-card:hover .robot-content .robot-name {
+      background: none; }
 
 .footer {
   height: 600px;
@@ -207,7 +276,8 @@ body {
     height: 60%;
     background: #9200ff;
     color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .footer .contact i {
       color: white;
       font-size: 40px;
@@ -220,7 +290,8 @@ body {
     width: 400px;
     background: white;
     border-radius: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .footer .logo img {
       margin-top: 20px;
       width: 80%; }
@@ -230,3 +301,5 @@ body {
   padding: 30px;
   font-size: 20px;
   color: #333; }
+
+/*# sourceMappingURL=styles.css.map */
